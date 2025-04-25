@@ -1,0 +1,21 @@
+﻿@model Ontap1.Models.NhanVien
+@{
+    ViewBag.Title = "Output";
+}
+
+@if (Model != null)
+{
+    <h2>Thông tin nhân viên vừa nhập</h2>
+    <p>
+        Mã nhân viên : @Model.manv <br>
+        Họ tên nhân viên @Model.hoten <br>
+        Địa chỉ: @Model.diachi <br>
+        Số ngày làm: @Model.songaylam <br>
+        Lương ngày: @Model.luongngay <br>
+        Tổng lương : @Model.tienluong
+    </p>
+}
+
+
+
+

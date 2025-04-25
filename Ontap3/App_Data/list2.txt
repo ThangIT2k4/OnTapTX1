@@ -1,0 +1,3 @@
+Nv01, Nguyễn Vân Anh, Hà Nội, 15, 200000, 3000000
+Nv02, Lê Thu Hà, Hải Phòng, 27, 250000, 6750000
+Nv03, Nguyễn Văn Hoàng, Hà Nội, 18, 250000, 4500000

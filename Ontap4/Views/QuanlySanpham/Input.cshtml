@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Input";
+}
+
+<style>
+    .form__group {
+        margin-bottom: 15px;
+    }
+    .form__label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    select, option {
+        padding: 5px 10px;
+    }
+</style>
+
+<h2>Tạo sản phẩm mới</h2>
+<form action="Output" method="post">
+    <div class="form__group">
+        <label for="masp" class="form__label">Mã sản phẩm</label>
+        <input type="text" id="masp" name="masp" class="form-control" />
+    </div>
+    <div class="form__group">
+        <label for="tensanpham" class="form__label">Tên sản phẩm</label>
+        <input type="text" id="tensanpham" name="tensanpham" class="form-control" />
+    </div>
+    <div class="form__group">
+        <label for="soluong" class="form__label">Số lượng</label>
+        <input type="text" id="soluong" name="soluong" class="form-control" />
+    </div>
+    <div class="form__group">
+        <label for="giatien" class="form__label">Giá tiền</label>
+        <input type="text" id="giatien" name="giatien" class="form-control" />
+    </div>
+    <div class="form__group">
+        <label for=" " class="form__label">Giảm giá</label>
+        <div style="display: flex; justify-content: start; align-items: center; gap: 30px;">
+            <div>
+                <input type="radio" value="1" checked name="giamgia" />
+                <label for="giamgia">Có</label>
+            </div>
+            <div>
+                <input type="radio" value="0" name="giamgia" />
+                <label for="giamgia">Không</label>
+            </div>
+        </div>
+    </div>
+    <div class="form__group">
+        <button type="submit" class="btn btn-primary">
+            Tạo sản phẩm mới
+        </button>
+    </div>
+</form>
+

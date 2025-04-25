@@ -1,0 +1,46 @@
+﻿@model Ontap1.Models.NhanVien
+@{
+    ViewBag.Title = "Input";
+}
+
+<style>
+    .form__group {
+        margin-bottom: 10px;
+    }
+
+    .form__label {
+        display: block;
+    }
+</style>
+
+<h2>Tạo nhân viên mới</h2>
+<form action="CreateUser" method="post">
+    <div class="form__group">
+        <label class="form__label" for="id">Mã nhân viên</label>
+        <input type="text" id="id" name="id" class="form-control" />
+    </div>
+    <div class="form__group">
+        <label class="form__label" for="name">Họ tên nhân viên</label>
+        <input type="text" id="name" name="name" class="form-control" />
+    </div>
+    <div class="form__group">
+        <label class="form__label">Địa chỉ</label>
+        <select class="form-control" name="address">
+            <option value="Hải Phòng">Hải Phòng</option>
+            <option value="Hà Nội">Hà Nội</option>
+            <option value="Quảng Ninh">Quảng Ninh</option>
+        </select>
+    </div>
+    <div class="form__group">
+        <label class="form__label" for="workday">Số ngày làm</label>
+        <input type="text" id="workday" name="workday" class="form-control" />
+    </div>
+    <div class="form__group">
+        <label class="form__label" for="salaryday">Lương ngày</label>
+        <input type="text" id="salaryday" name="salaryday" class="form-control" />
+    </div>
+    <div class="form__group">
+        <button type="submit" class="btn btn-primary">Tạo nhân viên</button>
+    </div>
+</form>
+

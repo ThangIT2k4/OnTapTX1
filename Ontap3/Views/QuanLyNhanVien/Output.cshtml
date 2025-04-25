@@ -1,0 +1,33 @@
+﻿@model Ontap3.Models.NhanVien
+@{
+    ViewBag.Title = "Output";
+}
+
+@if(Model != null)
+{
+    <p> <strong>Path: </strong> @ViewBag.path</p>
+    <p>
+        <strong>Mã nhân viên :</strong> 
+        @Model.manv <br/>
+
+        <strong>Họ tên :</strong> 
+        @Model.hoten <br/>
+
+        <strong>Địa chỉ :</strong> 
+        @Model.diachi <br/>
+
+        <strong>Số ngày làm :</strong> 
+        @Model.songaylam <br/>
+
+        <strong>Lương ngày :</strong> 
+        @Model.luongngay <br/>
+
+        <strong>Tiền lương :</strong> 
+        @Model.tienluong <br/>
+
+    </p>
+}
+else { 
+    <p>Không có nhân viên nào được tạo</p>
+}
+

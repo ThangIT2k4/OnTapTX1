@@ -1,0 +1,28 @@
+﻿@model Ontap4.Models.Sanpham
+@{
+    ViewBag.Title = "Output";
+}
+
+@if(Model != null)
+{
+    <h2>Sản phẩm vừa nhập là : </h2>
+    <p>
+        <strong>Mã sản phẩm</strong>
+        @Model.masp <br />
+        <strong>Tên sản phẩm</strong>
+        @Model.tensanpham <br />
+        <strong>Số lượng </strong>
+        @Model.soluong <br />
+        <strong>Giá tiền </strong>
+        @Model.giatien <br />
+        <strong>Giảm giá</strong>
+        @Model.giamgia  <br />
+        <strong>Thành tiền</strong>
+        @Model.thanhtien <br />
+    </p>
+}
+else
+{
+    <p>Không có sản phẩm nào được thêm</p>
+}
+

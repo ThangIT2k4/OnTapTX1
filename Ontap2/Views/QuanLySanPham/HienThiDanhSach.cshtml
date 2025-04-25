@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "HienThiDanhSach";
+}
+<style>
+    tr, th, td {
+        border: 1px solid #000;
+    }
+    
+    th, td {
+        padding: 5px 10px;
+    }
+</style>
+
+<div style="margin-bottom: 30px">
+    <h2>Danh sách các sản phẩm có giá  > 100</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm </th>
+                <th>Số lượng </th>
+                <th>Giá tiền </th>
+                <th>Giảm giá</th>
+                <th>Tổng Tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var sp in ViewBag.list1)
+            {
+                <tr>
+                    <td>@sp.masp</td>
+                    <td>@sp.tensanpham</td>
+                    <td>@sp.soluong</td>
+                    <td>@sp.giatien</td>
+                    <td>@sp.giamgia</td>
+                    <td>@sp.thanhtien</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h2>Danh sách các sản phẩm có giảm giá</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm </th>
+                <th>Số lượng </th>
+                <th>Giá tiền </th>
+                <th>Giảm giá</th>
+                <th>Tổng Tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sp in ViewBag.list2)
+            {
+                <tr>
+                    <td>@sp.masp</td>
+                    <td>@sp.tensanpham</td>
+                    <td>@sp.soluong</td>
+                    <td>@sp.giatien</td>
+                    <td>@sp.giamgia</td>
+                    <td>@sp.thanhtien</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
